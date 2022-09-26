@@ -1,0 +1,65 @@
+$bordo: #2A0E0E;
+
+@mixin click {
+    cursor:pointer;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+.principal {
+    background-image: url('img/piscina.png');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    height: 85vh;
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #1c1600ba;
+        padding: 20px 100px;
+
+        .parte-menu {
+            display: flex;
+            align-items: center;
+            li {
+                color: white;
+                a {
+                    color: #DFD8C5;
+                    &:hover {
+                        @include click;
+                    } 
+                }
+            }
+        }
+
+        .menu-esquerda {
+            li:first-child {
+                margin-right: 40px;
+            }
+            img {
+                transform: translateY(1.5px);
+            }
+            
+        }
+        .menu-direita {
+            li:first-child {
+                margin-right: 40px;
+            }
+            
+        }
+    }
+}
+
+
+
+h1 {
+    color: $color-primary;
+
+}
+
