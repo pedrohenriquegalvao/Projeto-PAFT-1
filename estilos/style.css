@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600;700&family=Manrope:wght@300;400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Inter", sans-serif;
+}
+
+.principal {
+  background-image: url("../img/piscina.png");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+.principal ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(28, 22, 0, 0.7294117647);
+  padding: 20px 100px;
+}
+.principal ul .parte-menu {
+  display: flex;
+  align-items: center;
+}
+.principal ul .parte-menu li {
+  color: white;
+}
+.principal ul .parte-menu li a {
+  color: #DFD8C5;
+  font-weight: 600;
+}
+.principal ul .parte-menu li a:hover {
+  cursor: pointer;
+}
+.principal ul .menu-esquerda li:first-child {
+  margin-right: 74px;
+}
+.principal ul .menu-esquerda img {
+  transform: translateY(1.5px);
+}
+.principal ul .menu-esquerda button {
+  background-color: #2A0E0E;
+  border: none;
+  padding: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.135em;
+  transition: 0.3s all;
+}
+.principal ul .menu-esquerda button a {
+  color: #FFF;
+}
+.principal ul .menu-esquerda button:hover {
+  cursor: pointer;
+  background-color: #551c1c;
+  padding: 12px;
+  transform: translateX(-2px);
+  transition: 0.3s all;
+}
+.principal ul .menu-direita li:first-child {
+  margin-right: 64px;
+}/*# sourceMappingURL=style.css.map */

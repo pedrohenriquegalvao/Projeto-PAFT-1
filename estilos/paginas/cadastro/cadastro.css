@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #2A0E0E;
+}
+body main {
+  background-color: #2A0E0E;
+  width: 70vw;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: #DFD8C5;
+  color: #2A0E0E;
+  padding: 40px 30px;
+}
+body main img {
+  width: 80px;
+  margin-bottom: 50px;
+}
+body main h1 {
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+body main form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  max-width: 80%;
+  margin: 0px auto 40px auto;
+}
+body main form .campos {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+body main form .campos .form-esquerda {
+  width: 45%;
+}
+body main form .campos .form-direita {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+body main form .campos input[type=text], body main form .campos input[type=password], body main form .campos input[type=email], body main form .campos input[type=tel] {
+  height: 40px;
+  width: 95%;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.625);
+  margin-bottom: 40px;
+  background: none;
+  padding: 0 0px;
+}
+body main form .campos input[type=text]:focus, body main form .campos input[type=password]:focus, body main form .campos input[type=email]:focus, body main form .campos input[type=tel]:focus {
+  outline: none;
+  border-bottom: 1.5px solid #782929;
+}
+body main form input[type=submit] {
+  margin: 0 auto;
+  width: 40%;
+  height: 35px;
+  border-radius: 22px;
+  border: none;
+  background-color: #DCB332;
+}
+body main form input[type=submit]:hover {
+  background-color: #b29023;
+  color: #FFF;
+  cursor: pointer;
+}
+body main p {
+  text-align: center;
+  font-family: "Inter", sans-serif;
+}
+body main p a {
+  text-decoration: none;
+  color: #d59021;
+  font-weight: 500;
+  font-family: "Manrope", sans-serif;
+}
+body main p a:hover {
+  cursor: pointer;
+  color: #7c5414;
+}/*# sourceMappingURL=cadastro.css.map */

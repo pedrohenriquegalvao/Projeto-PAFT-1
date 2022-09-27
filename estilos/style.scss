@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600;700&family=Manrope:wght@300;400;500;600;700;800&display=swap');
+
+$bordo: #2A0E0E;
+$fonte-primaria: 'Inter', sans-serif;
+$fonte-secundaria: 'Manrope', sans-serif;
+
+@mixin click {
+    cursor:pointer;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: $fonte-primaria;
+}
+
+.principal {
+    background-image: url('../img/piscina.png');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #1c1600ba;
+        padding: 20px 100px;
+
+        .parte-menu {
+            display: flex;
+            align-items: center;
+            li {
+                color: white;
+                a {
+                    color: #DFD8C5;
+                    font-weight: 600;
+                    &:hover {
+                        @include click;
+                    } 
+                }
+            }
+        }
+
+        .menu-esquerda {
+            li:first-child {
+                margin-right: 74px;
+            }
+            img {
+                transform: translateY(1.5px);
+            }
+            button {
+                background-color: $bordo;
+                border: none;
+                padding: 10px;
+                text-transform: uppercase;
+                letter-spacing: 0.135em;
+                transition: 0.3s all;
+                a {
+                    color: #FFF;
+                }
+                &:hover {
+                    @include click;
+                    background-color: #551c1c;
+                    padding: 12px;
+                    transform: translateX(-2px);
+                    transition: 0.3s all;
+                }
+            }
+            
+        }
+        .menu-direita {
+            li:first-child {
+                margin-right: 64px;
+            }
+            
+        }
+    }
+}
+

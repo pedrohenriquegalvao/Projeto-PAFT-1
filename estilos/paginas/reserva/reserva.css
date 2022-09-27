@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Inter", sans-serif;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(28, 22, 0, 0.7294117647);
+  padding: 20px 100px;
+}
+nav ul .parte-menu {
+  display: flex;
+  align-items: center;
+}
+nav ul .parte-menu li {
+  color: white;
+}
+nav ul .parte-menu li a {
+  color: #DFD8C5;
+  font-weight: 600;
+}
+nav ul .parte-menu li a:hover {
+  cursor: pointer;
+}
+nav ul .menu-esquerda li:first-child {
+  margin-right: 74px;
+}
+nav ul .menu-esquerda img {
+  transform: translateY(1.5px);
+}
+nav ul .menu-esquerda button {
+  background-color: #2A0E0E;
+  border: none;
+  padding: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.135em;
+  transition: 0.3s all;
+}
+nav ul .menu-esquerda button a {
+  color: #FFF;
+}
+nav ul .menu-esquerda button:hover {
+  cursor: pointer;
+  background-color: #551c1c;
+  padding: 12px;
+  transform: translateX(-2px);
+  transition: 0.3s all;
+}
+nav ul .menu-direita li:first-child {
+  margin-right: 64px;
+}/*# sourceMappingURL=reserva.css.map */
