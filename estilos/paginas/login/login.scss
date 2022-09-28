@@ -3,6 +3,28 @@ $bege: #DFD8C5;
 $fonte-primaria: 'Inter', sans-serif;
 $fonte-secundaria: 'Manrope', sans-serif;
 
+@mixin botao-page-login {
+    background-color: #453705;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    font-family: $fonte-primaria;
+    font-weight: 600;
+    letter-spacing: 0.135em;
+    padding: 10px 30px;
+    width: 40%;
+    margin: auto;
+    transition: 0.3s all;
+    a {
+        color: white;
+    }
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+        background-color: rgb(5, 3, 3);
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -13,7 +35,7 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: $bordo;
+    background-color: rgba(36, 28, 0, 0.61);
     main {
         background-color: $bordo;
         width: 390px;
@@ -53,17 +75,8 @@ body {
                 }
             }
             input[type=submit] {
-                margin: 0 auto;
-                width: 60%;
-                height: 35px;
-                border-radius: 22px;
-                border: none;
-                background-color: #DCB332;
-                &:hover {
-                    background-color: #b29023;
-                    color: #FFF;
-                    cursor: pointer;
-                }
+                
+                @include botao-page-login();
             }
         }
 

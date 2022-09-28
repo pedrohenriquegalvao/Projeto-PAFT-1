@@ -20,9 +20,8 @@ $fonte-terciaria: 'Marmelad', serif;
     }
     &:hover {
         cursor: pointer;
-        background-color: #8a6f0d;
-        padding: 12px 32px;
-        transform: translateX(2px);
+        transform: scale(1.1);
+        background-color: rgb(5, 3, 3);
     }
 }
 

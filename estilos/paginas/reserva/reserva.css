@@ -128,9 +128,8 @@ main .card .conteudo button a {
 }
 main .card .conteudo button:hover {
   cursor: pointer;
-  background-color: #8a6f0d;
-  padding: 12px 32px;
-  transform: translateX(2px);
+  transform: scale(1.1);
+  background-color: rgb(5, 3, 3);
 }
 main .pesquisa {
   background-color: rgba(36, 28, 0, 0.61);
@@ -180,7 +179,6 @@ main .pesquisa form input[type=submit] a {
 }
 main .pesquisa form input[type=submit]:hover {
   cursor: pointer;
-  background-color: #8a6f0d;
-  padding: 12px 32px;
-  transform: translateX(2px);
+  transform: scale(1.1);
+  background-color: rgb(5, 3, 3);
 }/*# sourceMappingURL=reserva.css.map */

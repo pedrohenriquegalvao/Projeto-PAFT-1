@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamento</title>
+    <link rel="stylesheet" href="/estilos/paginas/pagamento/pagamento.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <a href="/paginas/reserva.html"><i class="fa fa-arrow-left voltar"></i></a>
+        <h2>Formulário de Pagamento</h2>
+            <div class="input_group">
+                <div class="input_box">
+                    <h4>Detalhes do pagamento</h4>
+                    <input type="radio" name="pay" class="radio" id="bc1" checked>
+                    <label for="bc1"><span>
+                            <i class="fa fa-cc-visa"></i>Cartão de crédito</span></label>
+                    <input type="radio" name="pay" class="radio" id="bc2">
+                    <label for="bc2"><span>
+                            <i class="fa fa-cc-paypal"></i>Paypal</span></label>
+                </div>
+            </div>
+            <img src="/img/cartoes.png" alt="">
+            <div class="input_group">
+                <div class="input_box">
+                    <input type="tel" name="" class="name" placeholder="Número do cartão 1111-2222-3333-4444" required>
+                    
+                </div>
+            </div>
+            <div class="input_group">
+                <div class="input_box">
+                    <input type="tel" name="" class="name" placeholder="Card CVC 632" required>
+                    
+                </div>
+            </div>
+            <div class="input_group">
+                <div class="input_box">
+                    <div class="input_box">
+                        <input type="number" placeholder="Exp Month" required class="name">
+                        
+                    </div>
+                </div>
+                <div class="input_box">
+                    <input type="number" placeholder="Exp Year" required class="name">
+                    
+                </div>
+            </div>
+
+            <div class="input_group">
+                <div class="input_box">
+                    <button type="submit">Pagar</button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+
+</body>
+
+</html>
+        

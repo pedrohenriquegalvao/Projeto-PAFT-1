@@ -8,7 +8,7 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-color: #2A0E0E;
+  background-color: rgba(36, 28, 0, 0.61);
 }
 body main {
   background-color: #2A0E0E;
@@ -50,17 +50,25 @@ body main form input[type=text]:focus, body main form input[type=password]:focus
   outline: none;
 }
 body main form input[type=submit] {
-  margin: 0 auto;
-  width: 60%;
-  height: 35px;
-  border-radius: 22px;
+  background-color: #453705;
+  color: white;
   border: none;
-  background-color: #DCB332;
+  text-transform: uppercase;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.135em;
+  padding: 10px 30px;
+  width: 40%;
+  margin: auto;
+  transition: 0.3s all;
+}
+body main form input[type=submit] a {
+  color: white;
 }
 body main form input[type=submit]:hover {
-  background-color: #b29023;
-  color: #FFF;
   cursor: pointer;
+  transform: scale(1.1);
+  background-color: rgb(5, 3, 3);
 }
 body main p {
   text-align: center;
