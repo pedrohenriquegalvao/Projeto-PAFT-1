@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="../estilos/paginas/reserva/reserva.css">
 
     <title>Reservar</title>
+</head>
+<body>
     <nav>
         <ul>
             <div class="menu-esquerda parte-menu">
@@ -20,8 +22,77 @@
         </ul>
     </nav>
 
-</head>
-<body>
     
+    <main>
+        <h1>Quartos disponíveis</h1>
+        <section class="quartos">
+            <div class="card">
+                <div class="container-img">
+                    <img src="../img/quarto-familia.png" alt="Quarto para família">
+                </div>
+                <div class="conteudo">
+                    <h2>Quarto família</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse fugit consectetur dignissimos fugiat beatae eveniet libero deleniti et quaerat laborum, incidunt nisi</p>
+                    <span>R$500,00</span>
+                    <button><a href="pagamento.html">Reservar</a></button>
+                </div>
+                
+            </div>
+
+            <div class="card">
+                <div class="container-img">
+                    <img src="../img/quarto-casal.png" alt="Quarto de casal">
+                </div>
+                <div class="conteudo">
+                    <h2>Quarto casal</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse fugit consectetur dignissimos fugiat beatae eveniet libero deleniti et quaerat laborum, incidunt nisi</p>
+                    <span>R$450,00</span>
+                    <button><a href="pagamento.html">Reservar</a></button>     
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="container-img">
+                    <img src="../img/quarto-individual.png" alt="Quarto individual">
+                </div>
+                <div class="conteudo">
+                    <h2>Quarto individual</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse fugit consectetur dignissimos fugiat beatae eveniet libero deleniti et quaerat laborum, incidunt nisi</p>
+                    <span>R$350,00</span>
+                    <button><a href="pagamento.html">Reservar</a></button>
+                </div>
+            </div>
+        </section>
+        
+
+        <section class="pesquisa">
+            <form action="#">
+                <div class="envelope-inputs">
+                    <div class="container-input">
+                        <label for="dataentrada">Data de entrada</label>
+                        <input type="date" name="dataentrada" id="dataentrada">
+                    </div>
+
+                    <div class="container-input">
+                        <label for="datasaida">Data de saída</label>
+                        <input type="date" name="datasaida" id="datasaida">
+                    </div>
+
+                    <div class="container-input">
+                        <label for="numadultos">Nº Adultos</label>
+                        <input type="number" name="numadultos" id="numadultos" min="1" max="4">
+                    </div>
+
+                    <div class="container-input">
+                        <label for="numcriancas">Nº Crianças</label>
+                        <input type="number" name="numcriancas" id="numcriancas" min="1" max="6">
+                    </div>
+                </div>
+                
+                <input type="submit" value="Buscar">
+            </form>
+            
+        </section>
+    </main>
 </body>
 </html>

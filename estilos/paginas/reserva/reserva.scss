@@ -1,6 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Marmelad&display=swap');
+
 $bordo: #2A0E0E;
 $fonte-primaria: 'Inter', sans-serif;
 $fonte-secundaria: 'Manrope', sans-serif;
+$fonte-terciaria: 'Marmelad', serif;
+
+@mixin botao-page-reserva {
+    background-color: #453705;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    font-family: $fonte-primaria;
+    font-weight: 600;
+    letter-spacing: 0.135em;
+    padding: 10px 30px;
+    transition: 0.3s all;
+    a {
+        color: white;
+    }
+    &:hover {
+        cursor: pointer;
+        background-color: #8a6f0d;
+        padding: 12px 32px;
+        transform: translateX(2px);
+    }
+}
+
+@mixin titulos-page-reserva {
+    font-family: $fonte-terciaria;
+    color: #9D8002;
+}
 
 * {
     margin: 0;
@@ -17,7 +46,7 @@ nav {
     justify-content: space-between;
     background-color: #1c1600ba;
     padding: 20px 100px;
-
+    margin-bottom: 90px;
     .parte-menu {
         display: flex;
         align-items: center;
@@ -67,4 +96,104 @@ nav {
         
     }
 } 
+}
+
+main {
+    display: grid;
+    grid-template-areas: 
+    "titulo titulo"
+    "card pesquisa";
+    h1 {
+        grid-area: titulo;
+        text-align: center;
+        margin-bottom: 60px;
+        max-width: 878px;
+        @include titulos-page-reserva();
+    }
+    .quartos {
+        margin: 0px 120px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: fit-content;
+    }
+    .card {
+        background-color: #fff;
+        box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.2);
+        max-width: 630px;
+        margin-bottom: 60px;
+        height: 350px;
+        display: flex;
+        grid-area: card;
+        .container-img {
+            img {
+                width: 355px;
+                height: 350px;
+                object-fit: cover;
+            }
+        }
+        .conteudo {
+            padding: 38px 28px;
+            display: flex;
+            flex-direction: column;
+            h2 {
+                @include titulos-page-reserva();
+                margin-bottom: 22px;
+            }
+            p {
+                margin-bottom: 55px;
+            }
+            span {
+                align-self: end;
+                margin-bottom: 5px;
+                letter-spacing: 0.135em;
+            }
+            button {
+                @include botao-page-reserva();
+                align-self: flex-end;
+            }
+        }
+        
+    }
+
+
+    .pesquisa {
+        background-color: rgba(36, 28, 0, 0.61);  
+        box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.25);      
+        max-width: 480px;
+        height: 310px;
+        grid-area: pesquisa;
+        form {
+           padding: 5px 25px 40px 25px;
+           display: flex;
+           flex-direction: column;
+           .envelope-inputs {
+                display: flex; 
+                flex-wrap: wrap;
+                justify-content: space-between;
+                margin-bottom: 40px;
+                .container-input {
+                    label {
+                        display: block;
+                        color: #FFF;
+                        margin-top: 35px;
+                        margin-bottom: 8px;
+                    }
+                    input {
+                        width: 200px;
+                        height: 30px;
+                        &:focus {
+                            outline: none;
+                        }
+                    }
+                }
+           }
+           input[type=submit] {
+                @include botao-page-reserva();
+                margin: auto;
+           }
+           
+        }
+          
+    }
 }

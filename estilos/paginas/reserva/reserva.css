@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Marmelad&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -12,6 +13,7 @@ nav ul {
   justify-content: space-between;
   background-color: rgba(28, 22, 0, 0.7294117647);
   padding: 20px 100px;
+  margin-bottom: 90px;
 }
 nav ul .parte-menu {
   display: flex;
@@ -53,4 +55,132 @@ nav ul .menu-esquerda button:hover {
 }
 nav ul .menu-direita li:first-child {
   margin-right: 64px;
+}
+
+main {
+  display: grid;
+  grid-template-areas: "titulo titulo" "card pesquisa";
+}
+main h1 {
+  grid-area: titulo;
+  text-align: center;
+  margin-bottom: 60px;
+  max-width: 878px;
+  font-family: "Marmelad", serif;
+  color: #9D8002;
+}
+main .quartos {
+  margin: 0px 120px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+main .card {
+  background-color: #fff;
+  box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.2);
+  max-width: 630px;
+  margin-bottom: 60px;
+  height: 350px;
+  display: flex;
+  grid-area: card;
+}
+main .card .container-img img {
+  width: 355px;
+  height: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .card .conteudo {
+  padding: 38px 28px;
+  display: flex;
+  flex-direction: column;
+}
+main .card .conteudo h2 {
+  font-family: "Marmelad", serif;
+  color: #9D8002;
+  margin-bottom: 22px;
+}
+main .card .conteudo p {
+  margin-bottom: 55px;
+}
+main .card .conteudo span {
+  align-self: end;
+  margin-bottom: 5px;
+  letter-spacing: 0.135em;
+}
+main .card .conteudo button {
+  background-color: #453705;
+  color: white;
+  border: none;
+  text-transform: uppercase;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.135em;
+  padding: 10px 30px;
+  transition: 0.3s all;
+  align-self: flex-end;
+}
+main .card .conteudo button a {
+  color: white;
+}
+main .card .conteudo button:hover {
+  cursor: pointer;
+  background-color: #8a6f0d;
+  padding: 12px 32px;
+  transform: translateX(2px);
+}
+main .pesquisa {
+  background-color: rgba(36, 28, 0, 0.61);
+  box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.25);
+  max-width: 480px;
+  height: 310px;
+  grid-area: pesquisa;
+}
+main .pesquisa form {
+  padding: 5px 25px 40px 25px;
+  display: flex;
+  flex-direction: column;
+}
+main .pesquisa form .envelope-inputs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+main .pesquisa form .envelope-inputs .container-input label {
+  display: block;
+  color: #FFF;
+  margin-top: 35px;
+  margin-bottom: 8px;
+}
+main .pesquisa form .envelope-inputs .container-input input {
+  width: 200px;
+  height: 30px;
+}
+main .pesquisa form .envelope-inputs .container-input input:focus {
+  outline: none;
+}
+main .pesquisa form input[type=submit] {
+  background-color: #453705;
+  color: white;
+  border: none;
+  text-transform: uppercase;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.135em;
+  padding: 10px 30px;
+  transition: 0.3s all;
+  margin: auto;
+}
+main .pesquisa form input[type=submit] a {
+  color: white;
+}
+main .pesquisa form input[type=submit]:hover {
+  cursor: pointer;
+  background-color: #8a6f0d;
+  padding: 12px 32px;
+  transform: translateX(2px);
 }/*# sourceMappingURL=reserva.css.map */
